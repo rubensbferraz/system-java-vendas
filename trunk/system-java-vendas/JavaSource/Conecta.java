@@ -1,7 +1,8 @@
 
 
 import org.hibernate.Session;
-import br.com.fernanda.vendas.HibernateUtil;
+
+import br.com.fernanda.util.HibernateUtil;
 
 
 public class Conecta {
