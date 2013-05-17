@@ -1,0 +1,15 @@
+OBS: A novidade neste vídeo-aula é a utillização do controle de versão.
+
+Foi utilizado o google codes para controle de versão
+
+Link: https://code.google.com
+
+Nome do projeto: system-java-vendas
+
+svn checkout: https://system-java-vendas.googlecode.com/svn/trunk/
+
+Link do projeto: http://code.google.com/p/system-java-vendas/
+
+user: fernandalima2005@gmail.com
+
+password: cQ6jf8MG9FB5
