@@ -11,7 +11,6 @@ import javax.servlet.ServletResponse;
 
 import org.hibernate.SessionFactory;
 
-import br.com.fernanda.vendas.HibernateUtil;
 
 public class ConexaoHibernateFilter implements Filter {
 	
