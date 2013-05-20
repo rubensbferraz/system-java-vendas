@@ -18,7 +18,7 @@ public class Produto {
 	
 	private String unidade;
 	
-	private String descrição;
+	private String descricao;
 	
 	@Column(name="data_cadastro")
 	private Date dataCadastro;
@@ -26,6 +26,20 @@ public class Produto {
 	private Integer estoque;
 	
 	private float valor;
+	
+	
+	public Produto(){
+		//é necessário um construtor vazio, pois existe outro com argumentos
+	}
+
+	public Produto(String unidade, String descricao,
+			Date dataCadastro, Integer estoque, float valor) {
+		this.unidade = unidade;
+		this.descricao = descricao;
+		this.dataCadastro = dataCadastro;
+		this.estoque = estoque;
+		this.valor = valor;
+	}
 
 	public Integer getId() {
 		return id;
@@ -43,12 +57,12 @@ public class Produto {
 		this.unidade = unidade;
 	}
 
-	public String getDescrição() {
-		return descrição;
+	public String getDescricao() {
+		return descricao;
 	}
 
-	public void setDescrição(String descrição) {
-		this.descrição = descrição;
+	public void setDescricao(String descricao) {
+		this.descricao = descricao;
 	}
 
 	public Date getDataCadastro() {
