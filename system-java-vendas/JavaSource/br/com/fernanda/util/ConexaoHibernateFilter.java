@@ -12,6 +12,7 @@ import javax.servlet.ServletResponse;
 import org.hibernate.SessionFactory;
 
 
+
 public class ConexaoHibernateFilter implements Filter {
 	
 	private SessionFactory sf;
