@@ -3,8 +3,8 @@
 package br.com.fernanda.util;
 
 import org.hibernate.SessionFactory;
-import org.hibernate.cfg.AnnotationConfiguration;
-//import org.hibernate.cfg.Configuration;
+//import org.hibernate.cfg.AnnotationConfiguration;
+import org.hibernate.cfg.Configuration;
 
 
 public class HibernateUtil {
@@ -12,13 +12,13 @@ public class HibernateUtil {
 	private static final SessionFactory session = buildSessionFactory();
 	
 	private static SessionFactory buildSessionFactory() {
-		try {/*
+		try {
 			Configuration cfg = new Configuration();
 			cfg.configure("hibernate.cfg.xml");
-			return cfg.buildSessionFactory(); //retorna a sessão*/
-			AnnotationConfiguration cfg = new AnnotationConfiguration();
+			return cfg.buildSessionFactory(); //retorna a sessão
+			/*AnnotationConfiguration cfg = new AnnotationConfiguration();
 			cfg.configure("hibernate.cfg.xml");
-			return cfg.buildSessionFactory();
+			return cfg.buildSessionFactory();*/
 			
 			//return new AnnotationConfiguration().configure().buildSessionFactory();
 		} catch (Throwable e) {
