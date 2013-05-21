@@ -69,6 +69,5 @@ public class Cliente {
 	public void setRenda(float renda) {
 		this.renda = renda;
 	}
-	
-	
+		
 }
