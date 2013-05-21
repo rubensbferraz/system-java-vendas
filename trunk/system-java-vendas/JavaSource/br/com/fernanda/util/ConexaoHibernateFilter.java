@@ -17,11 +17,11 @@ public class ConexaoHibernateFilter implements Filter {
 	
 	private SessionFactory sf;
 
-	@Override
+	
 	public void destroy() {	
 	}
 
-	@Override
+	
 	public void doFilter(ServletRequest servletFilter, ServletResponse servletResponse,
 			FilterChain chain) throws IOException, ServletException {
 		try {
@@ -43,7 +43,7 @@ public class ConexaoHibernateFilter implements Filter {
 		
 	}
 
-	@Override
+	
 	public void init(FilterConfig conf) throws ServletException {
 		this.sf = HibernateUtil.getSessionFactory();
 	}
