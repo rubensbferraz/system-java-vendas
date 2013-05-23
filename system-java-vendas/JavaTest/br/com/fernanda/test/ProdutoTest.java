@@ -90,7 +90,7 @@ public class ProdutoTest {
 		@SuppressWarnings("unchecked")
 		List<Produto> produtos = lista.list();
 		
-		assertEquals(5, produtos.size());
+		assertEquals(0, produtos.size());
 	}
 	
 	@Test

@@ -9,7 +9,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="produto")
+@Table(name= "produto")
 public class Produto {
 	
 	@Id
@@ -20,7 +20,7 @@ public class Produto {
 	
 	private String descricao;
 	
-	@Column(name="data_cadastro")
+	@Column(name= "data_cadastro")
 	private Date dataCadastro;
 	
 	private Integer estoque;

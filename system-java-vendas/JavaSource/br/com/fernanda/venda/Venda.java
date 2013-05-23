@@ -1,6 +1,6 @@
 package br.com.fernanda.venda;
 
-import java.util.Date;
+import java.sql.Date;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -14,7 +14,7 @@ import br.com.fernanda.cliente.Cliente;
 import br.com.fernanda.produto.Produto;
 
 @Entity
-@Table(name="venda")
+@Table(name= "venda")
 public class Venda {
 	
 	@Id
@@ -25,11 +25,11 @@ public class Venda {
 	 * as chaves estrangeitas correspondentes*/
 	
 	@ManyToOne
-	@JoinColumn(name="id_cliente", nullable=false)
+	@JoinColumn(name= "id_cliente", nullable=false)
 	private Cliente cliente;
 	
 	@ManyToOne
-	@JoinColumn(name="id_produto", nullable=false)
+	@JoinColumn(name= "id_produto", nullable=false)
 	private Produto produto;
 	
 	/*Fim*/
