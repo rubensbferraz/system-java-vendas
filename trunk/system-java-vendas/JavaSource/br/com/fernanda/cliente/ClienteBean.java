@@ -1,6 +1,5 @@
 package br.com.fernanda.cliente;
 
-import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -21,7 +20,7 @@ public class ClienteBean {
 		ClienteRN clienteRN = new ClienteRN();
 		clienteSelecionado.setDataCadastro(new Date());
 		clienteRN.salvar(clienteSelecionado);
-		FacesMessage faces = new FacesMessage("Cliente cadastrado com sucesso");
+		FacesMessage faces = new FacesMessage("Cliente cadastrado com sucesso!");
 		FacesContext contexto = FacesContext.getCurrentInstance();
 		contexto.addMessage(null, faces);
 		
