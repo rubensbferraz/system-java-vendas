@@ -1,6 +1,8 @@
 package br.com.fernanda.test;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+
+import java.util.List;
 
 import org.hibernate.Session;
 import org.hibernate.Transaction;
@@ -57,6 +59,13 @@ public class ClienteTest {
 		
 		assertEquals(true, true);
 			
+	}
+	
+	@Test
+	public void listarTeste(){
+		ClienteRN clienteRN = new ClienteRN();
+		List<Cliente> lista = clienteRN.listar();
+		assertEquals(1, lista.size());
 	}
 
 }
